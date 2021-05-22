@@ -1,0 +1,257 @@
+@charset "UTF-8";
+* {
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  margin: 0 auto; }
+
+header {
+  background-color: black; }
+
+nav {
+  background-color: greenyellow; }
+
+.desc-foto {
+  margin-left: 700px; }
+
+/* Font size, text align, text transform y letter spacing */
+h1 {
+  color: #72a324;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 35pt;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-top: 50px; }
+
+/* Al nav decido ponerle color Marron en todas las secciones y Box Modelling */
+nav {
+  color: brown;
+  Font-size: 15pt;
+  font-family: cursive;
+  line-height: 50px;
+  margin: 25px;
+  padding-top: none; }
+
+/* Agrego un class para definir el encabezado de la tabla en la seccion "computadoras" y camelCase*/
+.tituloComputadora {
+  color: peru;
+  font-size: 150%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: min-content; }
+
+.tituloComputadora > th {
+  padding: 20px; }
+
+/* Decido tomar el valor table para que el texto en todas las secciones tengan las mismas caracteristicas. Agrego border a los cuadros de las secciones */
+table {
+  color: lightslategrey;
+  font-size: 16pt;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-collapse: collapse; }
+
+/* Le agrego bordes a la tabla */
+th, td {
+  border: 1px solid black; }
+
+/* En la seccion Laptops hago un class llamado "laptops" para el encabezado de la tabla */
+.laptops {
+  color: limegreen;
+  font-size: 40px;
+  font-style: italic; }
+
+/* Agrego padding al header de la tabla  */
+.laptops > th {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* Vuelvo a realizar un class para el encabezado de componentes */
+.componentes {
+  color: #464664;
+  font-size: x-large;
+  font-style: oblique; }
+
+/* Padding para que quede mas prolijo */
+.componentes > th {
+  padding: 30px; }
+
+/* Creo un ID para la seccion contactos ya que hay dos H2, que comparte con la seccion de contacto */
+#ubicacion {
+  color: saddlebrown;
+  font-size: 26pt;
+  font-family: monospace; }
+
+/* Aca utilizo el ID creado, llamado contacto para hacerlo de diferente color que al de ubicacion */
+#contacto {
+  color: steelblue;
+  font-size: 32px; }
+
+/* Pongo el H3 de la seccion Contacto en otro color y fuente */
+h3 {
+  color: turquoise; }
+
+/* Cambio el tamaño de la fuente*/
+h2 {
+  font-size: 26pt; }
+
+/* Cambio el tamaño y color del parrafo */
+p {
+  font-size: 24px;
+  color: black; }
+
+.tarjetasGraficas {
+  color: blue; }
+
+.tarjetasGraficas > tbody > tr > th {
+  padding: 20px; }
+
+.fondoGrafica tr {
+  background-color: black; }
+
+/* fonts y camelCase */
+.tipoComputadoras {
+  font-size: 150%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: burlywood; }
+
+/* Padding */
+.tipoComputadoras > tbody > tr > td {
+  padding: 20px; }
+
+a {
+  text-decoration: none; }
+
+/* list style y camelCase*/
+.listType {
+  list-style-type: square;
+  list-style-position: inside; }
+
+/* text align y padding */
+section {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0; }
+
+/* width, height, margin, padding  */
+img {
+  width: 410px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px; }
+
+/* Cambio el display del "p" del menu para que se vea inline */
+p {
+  display: inline; }
+
+/* Agrego un display porque afecto como se muestra el video y el texto en laptops */
+.videosNotebooks > p {
+  display: block; }
+
+/* Flexbox para index.html */
+header h2 {
+  color: green;
+  font-style: italic;
+  display: flex;
+  justify-content: center; }
+
+main {
+  display: flex;
+  flex-flow: row; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 32px; }
+
+/* Flexbox en Componentes*/
+.componentes tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px; }
+
+article p {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-style: oblique;
+  color: #002; }
+
+/* Aplico grid en index para el parrafo con Lorem y borde para que se note */
+main {
+  border: 1px solid; }
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+#grilla {
+  display: grid;
+  grid-template-areas: "menu grid";
+  grid-column-gap: 150px; }
+
+/* Media Queries */
+/* Para tablets y Notbooks */
+@media (min-width: 768px) {
+  body {
+    background-color: lightblue;
+    font-size: small; } }
+
+/* Para moviles */
+@media (max-width: 600px) {
+  body {
+    background-color: #672;
+    font-size: medium; } }
+
+/* Para computadoras de escritorio*/
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    background-color: chocolate; } }
+
+/* Gradientes y transition*/
+main {
+  width: 1500px;
+  height: 500px;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  transition: all 1.5s; }
+
+main:hover {
+  width: 2000px;
+  height: 1000px;
+  background-image: radial-gradient(left, white, black);
+  opacity: 0.1; }
+
+footer {
+  background-image: linear-gradient(160deg, yellow, green); }
+
+#laptops {
+  animation-name: laptops;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: ease-in; }
+
+/* css de carousel */
+.carousel-item {
+  height: 32rem; }
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 1%;
+  height: 32rem;
+  margin-bottom: 32px; }
+
+/* Animacion y transform */
+@keyframes laptops {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1.25); } }
